@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="iLAB Technical Assessment Test Suite" duration-ms="45068" started-at="2017-11-26T14:22:04Z" finished-at="2017-11-26T14:22:49Z">
+    <groups>
+    </groups>
+    <test name="Apply For Vacancy" duration-ms="45068" started-at="2017-11-26T14:22:04Z" finished-at="2017-11-26T14:22:49Z">
+      <class name="tests.CareersApplicationTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.CareersApplicationTest@7e0babb1]" name="setUp" is-config="true" duration-ms="30448" started-at="2017-11-26T16:22:04Z" finished-at="2017-11-26T16:22:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.ilabquality.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TestScriptFile]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[South Africa]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Senior Test Automation Specialist – Johannesburg]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Jonah Lomu]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[jl@lomu.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[iLAB is a great company to work for.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="runCareerApplicationTest()[pri:0, instance:tests.CareersApplicationTest@7e0babb1]" name="runCareerApplicationTest" duration-ms="12377" started-at="2017-11-26T16:22:34Z" finished-at="2017-11-26T16:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCareerApplicationTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CareersApplicationTest@7e0babb1]" name="tearDown" is-config="true" duration-ms="2229" started-at="2017-11-26T16:22:47Z" finished-at="2017-11-26T16:22:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runCareerApplicationTest status=SUCCESS method=CareersApplicationTest.runCareerApplicationTest()[pri:0, instance:tests.CareersApplicationTest@7e0babb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CareersApplicationTest -->
+    </test> <!-- Apply For Vacancy -->
+  </suite> <!-- iLAB Technical Assessment Test Suite -->
+</testng-results>

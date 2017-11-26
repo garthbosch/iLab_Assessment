@@ -1,0 +1,3 @@
+cd \Program Files\MongoDB\Server\3.4\bin
+mongo.exe ilab_assessment --eval "db.testdata.insert({'url': 'http://www.ilabquality.com/', 'browserType': 'chrome', waitTimeOut: 30, 'test_description': 'This test is applying a specific position at iLAB', 'locationOfPosition': 'South Africa', 'positionApplyingFor': 'Senior Test Automation Specialist - Johannesburg', 'applicantName': 'Jonah Lomu', 'applicantEmailAddress': 'jl@lomu.com', 'message': 'iLAB is a great company to work for.'})"
+pause
