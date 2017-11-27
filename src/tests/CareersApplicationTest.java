@@ -59,8 +59,7 @@ public class CareersApplicationTest extends CommonTests {
         Assert.assertTrue(careerPage.verifyCareerPage());
         careerPage.selectLocationOfPosition(testData.getLocationOfPosition());
         Assert.assertTrue(careerPage.verifyCareerLocationPage(testData.getLocationOfPosition()));
-        careerPage.selectPositionToApplyFor(testData.getPositionApplyingFor());
-        Assert.assertTrue(applyPage.verifyApplyPage(testData.getPositionApplyingFor()));
+        careerPage.selectFistPositionInList();
         applyPage.enterApplicantDetail(testData.getApplicantName(), testData.getApplicantEmailAddress(), testData.getMessage());
         Assert.assertTrue(applyPage.verifyApplicationMessage("There are errors in your form."));
     }

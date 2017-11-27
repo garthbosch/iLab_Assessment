@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumWebDriverUtils {
@@ -190,5 +191,9 @@ public class SeleniumWebDriverUtils {
         } else {
             return false;
         }
+    }
+
+    public List<WebElement> findElementsByXpath(String element) throws Exception {
+        return driver.findElements(By.xpath(element));
     }
 }

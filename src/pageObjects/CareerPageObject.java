@@ -2,7 +2,10 @@ package pageObjects;
 
 import gfb.logging.Logging;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.WebElement;
 import utils.SeleniumWebDriverUtils;
+
+import java.util.List;
 
 public class CareerPageObject {
 
@@ -16,7 +19,8 @@ public class CareerPageObject {
     private static final String UNITED_KINGDOM_LINK = "//div[@class='wpb_wrapper']//a[normalize-space(.)='" + UNITED_KINGDOM + "']";
     private static final String PAGE_TITLE = "CAREERS - iLAB";
     private static final String CAREER_LOCATION_TITLE = " - iLAB";
-    private String POSITION_APPLYING_FOR_LINK = "//div[@class='wpjb-job-list wpjb-grid']//a[normalize-space(.)=";
+//    private String POSITION_APPLYING_FOR_LINK = "//div[@class='wpjb-job-list wpjb-grid']//a[normalize-space(.)=";
+    private String POSITION_APPLYING_FOR_LINKS = "//div[@class='wpjb-grid-col wpjb-col-40 wpjb-col-title']";
     private SeleniumWebDriverUtils driver;
     public static Logger log = Logging.getLogger(true);
 
@@ -55,7 +59,8 @@ public class CareerPageObject {
         }
     }
 
-    public void selectPositionToApplyFor(String positionApplyingFor) throws Exception {
-        driver.clickByXpath(POSITION_APPLYING_FOR_LINK + "'" + positionApplyingFor + "']");
+    public void selectFistPositionInList() throws Exception {
+        List<WebElement> positions = driver.findElementsByXpath(POSITION_APPLYING_FOR_LINKS);
+        positions.get(0).click();
     }
 }
